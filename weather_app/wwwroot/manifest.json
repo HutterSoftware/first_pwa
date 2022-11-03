@@ -1,0 +1,27 @@
+{
+  "short_name": "weather_app",
+  "name": "weather_app",
+  "icons": [
+    {
+      "src": "data/sun.png",
+      "type": "image/png",
+      "sizes": "225x225"
+    }
+  ],
+  "id": "/",
+  "start_url": "/index.html",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#ffffff",
+  "shortcuts": [
+  ],
+  "description": "Current weather conditions",
+  "screenshots": [
+    {
+      "src": "data/sun.png",
+      "type": "image/png",
+      "sizes": "225x225"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>weather_app</title>
+
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="/css/site.css" />
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap-grid.css" />
+
+    <script src="/js/register_service_worker.js" type="text/javascript"></script>
+    <script src="/js/service-worker.js" type="text/javascript"></script>
+    <script src="/js/weather-data.js" type="text/javascript"></script>
+</head>
+<body class="container">
+    <h1 class="col-md-12 col-md-offset-6">weather_app</h1>
+
+    <table class="col-md-12 col-md-offset-6">
+        <tbody>
+            <tr class="row">
+                <th class="col-md-2 col-md-offset-4">Location:</th>
+                <td id="long" class="col-md-2"></td>
+            </tr>
+            <tr class="row">
+                <th class="col-md-2 col-md-offset-4"></th>
+                <td id="lati" class="col-md-2"></td>
+            </tr>
+            <tr class="row">
+                <th class="col-md-2 col-md-offset-4">Temperature in °C:</th>
+                <td id="temp" class="col-md-2"></td>
+            </tr>
+            <tr class="row">
+                <th class="col-md-2 col-md-offset-4">Condition:</th>
+                <td id="condition" class="col-md-2"></td>
+            </tr>
+            <tr class="row">
+                <th class="col-md-2 col-md-offset-4">Pressure in hPa:</th>
+                <td id="pressure" class="col-md-2"></td>
+            </tr>
+            <tr class="row">
+                <th class="col-md-2 col-md-offset-4">Humidity in %:</th>
+                <td id="humidity" class="col-md-2"></td>
+            </tr>
+            <tr class="row">
+                <th class="col-md-2 col-md-offset-4">Wind speed in km/h:</th>
+                <td id="wind-speed" class="col-md-2"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button id="updatebutton" type="button" class="btn btn-primary col-md-4 col-md-offset-8" onclick="updateWeatherData()">Wetterdaten aktualisieren</button>
+</body>
+</html>
